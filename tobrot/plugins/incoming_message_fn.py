@@ -41,7 +41,7 @@ async def incoming_purge_message_f(client, message):
     await i_m_sefg2.delete()
 
 async def incoming_message_f(client, message):
-    """/leech command"""
+    """/leechupload command"""
     i_m_sefg = await message.reply_text("processing", quote=True)
     is_zip = False
     if len(message.command) > 1:
@@ -86,7 +86,7 @@ async def incoming_message_f(client, message):
 
 
 async def incoming_youtube_dl_f(client, message):
-    """ /ytdl command """
+    """ /ytupload command """
     i_m_sefg = await message.reply_text("processing", quote=True)
     # LOGGER.info(message)
     # extract link from message
